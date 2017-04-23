@@ -28,15 +28,6 @@ module SettingsHelper
     id: 'Bahasa Indonesia',
   }.freeze
 
-  THEMES = {
-    default: {
-      label: 'Default(dark)',
-    },
-    kkt: {
-      label: 'Kirakiratter',
-    }
-  }
-
   def human_locale(locale)
     HUMAN_LOCALES[locale]
   end
@@ -46,6 +37,11 @@ module SettingsHelper
   end
 
   def themes_list
-    THEMES
+    assets = if Rails.configuration.assets.compile
+      Rails.application.precompiled_assets
+    else
+      Rails.application.assets_manifest.assets
+    end
+    assets.map{|a| m = a.match(%r{^themes/(.+)/application\.css}); m && m[1] }.compact
   end
 end
