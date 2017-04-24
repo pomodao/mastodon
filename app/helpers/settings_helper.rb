@@ -35,4 +35,13 @@ module SettingsHelper
   def hash_to_object(hash)
     HashObject.new(hash)
   end
+
+  def themes_list
+    assets = if Rails.configuration.assets.compile
+      Rails.application.precompiled_assets
+    else
+      Rails.application.assets_manifest.assets
+    end
+    assets.map{|a| m = a.match(%r{^themes/(.+)/application\.css}); m && m[1] }.compact
+  end
 end

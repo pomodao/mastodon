@@ -289,6 +289,9 @@ ja:
     click_to_show: クリックして表示
     reblogged: ブーストされました
     sensitive_content: 不適切なコンテンツの可能性があります
+  themes:
+    default: デフォルト(ダーク)
+    kkt: キラキラッター
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"

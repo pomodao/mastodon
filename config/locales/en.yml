@@ -290,6 +290,9 @@ en:
     click_to_show: Click to show
     reblogged: boosted
     sensitive_content: Sensitive content
+  themes:
+    default: Default(dark)
+    kkt: Kirakiratter
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
