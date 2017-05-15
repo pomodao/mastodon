@@ -200,6 +200,10 @@ Rails.application.routes.draw do
   get '/about/more', to: 'about#more'
   get '/terms',      to: 'about#terms'
 
+  if ENV['RESTRECTED_PATH']
+    get ENV['RESTRECTED_PATH'], to: 'about#restrected'
+  end
+
   root 'home#index'
 
   match '*unmatched_route',
