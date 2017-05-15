@@ -24,8 +24,8 @@ ja:
     links: リンク
     other_instances: 他のインスタンス
     source_code: ソースコード
-    status_count_after: トゥート
-    status_count_before: トゥート数
+    status_count_after: パオンヌ
+    status_count_before: パオンヌ数
     terms: プライバシーポリシー
     user_count_after: 人
     user_count_before: ユーザー数
@@ -90,7 +90,7 @@ ja:
         report: レポート
         targeted_reports: このアカウントについてのレポート
       silence: サイレンス
-      statuses: トゥート数
+      statuses: パオンヌ数
       title: アカウント
       undo_silenced: サイレンスから戻す
       undo_suspension: 停止から戻す
@@ -105,7 +105,7 @@ ja:
         create: ブロックを作成
         hint: ドメインブロックはデータベース中のアカウント項目の作成を妨げませんが、遡って自動的に指定されたモデレーションをそれらのアカウントに適用します。
         severity:
-          desc_html: "<strong>サイレンス</strong>はアカウントのトゥートをフォローしていない人から隠します。<strong>停止</strong>はそのアカウントのコンテンツ、メディア、プロフィールデータをすべて削除します。"
+          desc_html: "<strong>サイレンス</strong>はアカウントのパオンヌをフォローしていない人から隠します。<strong>停止</strong>はそのアカウントのコンテンツ、メディア、プロフィールデータをすべて削除します。"
           silence: サイレンス
           suspend: 停止
         title: 新規ドメインブロック
@@ -272,8 +272,8 @@ ja:
         one: "新しい1件の通知 \U0001F418"
         other: "新しい%{count}件の通知 \U0001F418"
     favourite:
-      body: 'あなたのトゥートが %{name} さんにお気に入り登録されました:'
-      subject: "%{name} さんがあなたのトゥートをお気に入りに登録しました"
+      body: 'あなたのパオンヌが %{name} さんにお気に入り登録されました:'
+      subject: "%{name} さんがあなたのパオンヌをお気に入りに登録しました"
     follow:
       body: "%{name} さんにフォローされています"
       subject: "%{name} さんにフォローされています"
@@ -284,8 +284,8 @@ ja:
       body: "%{name} さんから返信がありました:"
       subject: "%{name} さんに返信されました"
     reblog:
-      body: 'あなたのトゥートが %{name} さんにブーストされました:'
-      subject: あなたのトゥートが %{name} さんにブーストされました
+      body: 'あなたのパオンヌが %{name} さんにブーストされました:'
+      subject: あなたのパオンヌが %{name} さんにブーストされました
   pagination:
     next: 次
     prev: 前
