@@ -2,7 +2,7 @@
 
 class AboutController < ApplicationController
   before_action :set_body_classes
-  before_action :set_instance_presenter, only: [:show, :more, :restrected]
+  before_action :set_instance_presenter, only: [:show, :more, :restricted]
 
   def show; end
 
@@ -10,7 +10,7 @@ class AboutController < ApplicationController
 
   def terms; end
 
-  def restrected; end
+  def restricted; end
 
   private
 

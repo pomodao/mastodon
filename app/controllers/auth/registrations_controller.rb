@@ -30,8 +30,8 @@ class Auth::RegistrationsController < Devise::RegistrationsController
 
   def check_enabled_registrations
     prev_path = Rails.application.routes.recognize_path(request.referrer)
-    from_restricted? = prev_path == {controller: 'about', action: 'restrected'}
-    redirect_to root_path if !from_restricted? && (single_user_mode? || !Setting.open_registrations)
+    from_restricted = prev_path == {controller: 'about', action: 'restricted'}
+    redirect_to root_path if !from_restricted && (single_user_mode? || !Setting.open_registrations)
   end
 
   private
